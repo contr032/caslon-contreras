@@ -1,0 +1,580 @@
+html {
+    box-sizing:border-box;
+}
+
+*, *:before, *:after {
+    box-sizing:inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+h1{
+  font-family: adobe-caslon-pro, serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  font-size: 150px;
+  }
+
+Body {
+  background-color: #AACDDD;
+  }
+
+h3 {
+  font-family: adobe-caslon-pro, serif;
+  font-weight: 400;
+  font-style: italic;
+  text-align: right;
+  }
+
+
+  .s1 {
+  font-size: 15px;
+}
+
+.s2{
+  transform: rotate(22.5deg);
+  font-size: 25px;
+}
+
+.s3{
+  transform: rotate(45deg);
+  font-size: 35px;
+}
+
+.s4{
+  transform: rotate(67.5deg);
+  font-size: 45px;
+}
+
+.s5{
+  transform: rotate(90deg);
+  font-size: 55px;
+}
+
+.s6{
+  transform: rotate(112.5deg);
+  font-size: 65px;
+}
+
+.s7{
+  transform: rotate(135deg);
+  font-size: 75px;
+}
+
+.s8{
+  transform: rotate(157.5deg);
+  font-size: 85px;
+}
+
+.g2{
+  transform: translate(50px, -125px);
+  color: #333333;
+}
+
+.g3{
+  transform: translate(100px, -250px);
+  color: #666666
+}
+
+.V1 {
+  transform: rotate(0.75turn);
+  color: #333333;
+}
+
+.V2 {
+  transform: translate(20px, -200px);
+    color: #666666;
+}
+.V3 {
+  transform: rotate(0.25turn) translate(-340px, -45px);
+  color: #333333;
+}
+
+.V4 {
+  transform: rotate(0.5turn) translate(-20px, 475px);
+
+}
+
+.O {
+  font-size: 400px;
+}
+
+.C {
+  font-size:200px;
+  transform: translateY(-550px);
+}
+
+.R {
+  font-size:100px;
+  transform: translateY(-825px)translateX(22px);
+}
+
+.section1{
+  color: #C44036;}
+
+.section1:hover {
+
+    animation:  shake 0.1s  ;
+    animation-iteration-count:infinite;
+}
+
+@keyframes shake{
+  0%{
+    transform: translateX(0)
+  }
+  25%{
+    transform: translateX(1.5px);
+  }
+
+  50%{
+    transform: translateX(-.5px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+
+.section2{
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 50px;
+  color: #B51004;
+}
+
+.section2:hover {
+
+    animation:  shake2 0.1s  ;
+    animation-iteration-count:infinite;
+}
+@keyframes shake2{
+  0%{
+    transform: translateY(0)
+  }
+  25%{
+    transform: translateY(3px);
+  }
+
+  50%{
+    transform: translateY(-3px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.section3{
+  font-size: 37px;
+  font-weight: 600;
+  line-height: 60px;
+  color: #880C03;
+}
+
+.section3:hover {
+
+    animation:  shake3 0.1s  ;
+    animation-iteration-count:infinite;
+}
+@keyframes shake3{
+  0%{
+    transform: translateY(0)
+  }
+  25%{
+    transform: translate(5px,5px);
+  }
+
+  50%{
+    transform: translate(-5px,-5px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.item12:hover {
+  transform: scale(.5);
+  font-weight: 500;
+  color: #C44036;
+}
+
+.item13:hover {
+    transform: scale(2);
+  font-weight: 700;
+  color: #B51004;
+}
+
+
+  @media (min-width:450px) {
+
+      img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+      }
+
+    .container  {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 70px 20px;
+        grid-auto-flow: dense;
+      }
+
+      h1 {
+        font-size: 60px;
+        letter-spacing: .08em;
+        margin-top: -.10em;
+        margin-bottom: -.55em;
+        text-align: center;
+            }
+
+        .anim-typewriter {
+          overflow: hidden;
+          max-width: 27em;
+          border-right: .2em solid white;
+          white-space: nowrap;
+          margin: 0 auto;
+          letter-spacing: .15em;
+          animation:
+          typing 3.5s steps(40, end),
+          blink-caret .75s step-end infinite;
+          }
+
+
+          @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+          }
+
+
+          @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: white; }
+          }
+
+
+      .item1{
+        line-height: 30px;
+      }
+
+      .item2 {
+        font-family: adobe-caslon-pro, serif;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 40px;
+        letter-spacing: 9px;
+        background-image: url("background.jpg");
+        background-repeat: no-repeat;
+        background-position: .15em .7em;
+
+      }
+
+      .item3 {
+        font-family: adobe-caslon-pro, serif;
+        font-weight: 900;
+        font-style: normal;
+        line-height: 40px;
+        letter-spacing: 5px;
+        background-image: url("background.jpg");
+        background-repeat: no-repeat;
+        background-position: .15em .73em;
+
+      }
+
+      .item4{
+        margin-left: 25px;
+        margin-right: 25px;
+
+      }
+
+      .item5 {
+        line-height: 25px;
+        font-style: normal;
+        letter-spacing: 1.5px;
+      }
+
+      .item6 {
+        margin-top: 8em;
+        position:relative;
+        font-family: adobe-caslon-pro, serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+
+      .item7{
+        text-align: center;
+        font-family: adobe-caslon-pro, serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 35px;
+      }
+
+      .item8 {
+        font-family: adobe-caslon-pro, serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 100px;
+        text-align: center;
+        margin-right: 1em;
+
+      }
+
+      .item9{
+        font-family: adobe-caslon-pro, serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 100px;
+        text-align: center;
+      }
+
+      .item10{
+        color: white;
+        background-color: black;
+        font-family: adobe-caslon-pro, serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 100px;
+        text-align: center;
+        margin-top: -2em;
+        max-height: 550px;
+      }
+
+      .item11{
+        font-family: adobe-caslon-pro, serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 40px;
+        max-height: 100%;
+        margin-top:.5em;
+        }
+
+      .item12{
+          font-family: adobe-caslon-pro, serif;
+          font-weight: 700;
+          font-style: normal;
+            font-size: 32px;
+            text-align:center;
+          }
+
+      .item13{
+            font-family: adobe-caslon-pro, serif;
+            font-weight: 500;
+            font-style: normal;
+              font-size: 32px;
+              text-align: center;
+            }
+
+        .item14 {
+          font-family: adobe-caslon-pro, serif;
+          font-weight: 700;
+          font-style: normal;
+          font-size: 32px;
+          text-align:center;
+        }
+
+
+ @media (min-width:850px) {
+
+   h1 {
+     font-size: 120px;
+     letter-spacing: 8px;
+
+   }
+
+
+
+   .container  {
+     max-width: 1200px;
+     margin: 0 auto;
+       display: grid;
+       grid-gap: 120px 20px;
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-template-rows: 200px, 200px, 200px, 300px, 1fr, 100px,
+       100px,50px, 1fr;
+     }
+
+     .anim-typewriter {
+       grid-column-start:1;
+       grid-column-end: 4;
+       margin-bottom: 200em;
+       max-width: 53em;
+       margin: 0 auto;
+       overflow: hidden;
+       border-right: .5em solid white;
+       white-space: nowrap;
+       margin: 0 auto;
+       letter-spacing: .45px;
+       animation:
+         typing 3.5s steps(40, end),
+         blink-caret .75s step-end infinite;
+     }
+
+
+     @keyframes typing {
+       from { width: 0 }
+       to { width: 100% }
+     }
+
+
+     @keyframes blink-caret {
+       from, to { border-color: transparent }
+       50% { border-color: white; }
+     }
+
+     .item1 {
+       grid-column-start:1;
+       grid-column-end: 3;
+       grid-row-start: 2;
+       grid-row-end: 4;
+       margin-right: 100px;
+       letter-spacing: 1px;
+       font-size: 28px;
+       margin-top: 4em;
+       line-height: 40px;
+     }
+
+     .item2 {
+       grid-column-start: 3;
+       grid-row-start: 2;
+       font-size: 50px;
+       line-height: 57px;
+       background-position: .15em .15em;
+       margin-top: 2em;
+
+
+     }
+
+     .item3 {
+       grid-column-start: 3;
+       grid-row-start: 3;
+       font-size: 60px;
+       line-height: 45px;
+       line-height: 90px;
+       background-position: .15em .33em;
+     }
+
+     .item4 {
+       grid-column-start: 2;
+       grid-column-end: 4;
+       grid-row-start: 4;
+       letter-spacing: 3px;
+       margin-left: 10em;
+       margin-right: 0;
+     }
+
+
+     .item5 {
+       grid-column-start: 1;
+       grid-column-end: 2;
+       grid-row-start:4;
+       padding-bottom: 50px;
+       margin-right: -5em;
+     }
+
+     .item6 {
+       grid-column-start: 1;
+       grid-column-end: 4;
+       grid-row-start: 5;
+       grid-row-end: 6;
+       position:relative;
+       margin-top: 20em;
+     }
+
+     .item7 {
+       grid-column-start: 1;
+       grid-column-end: 4;
+       grid-row-start: 6;
+       margin-top: -7em;
+       margin-bottom: 7em;
+
+     }
+
+     .item8{
+       margin-top: -50px;
+       margin-right: 2em;
+       grid-row-start: 7;
+     }
+
+
+     .item9{
+       grid-column-start: 3;
+       grid-row-start: 7;
+       padding-left: 1em;
+     }
+
+     .item10 {
+       grid-column-start: 2;
+       grid-row-start: 7;
+       grid-row-end: 8;
+     }
+
+     .item11 {
+       grid-column-start: 1;
+       grid-column-end: 4;
+       grid-row-start: 8;
+       margin-top: -7em;
+       margin-bottom: 3em;
+     }
+
+     .item12 {
+       grid-column-start: 1;
+       grid-row-start: 9;
+       padding-top: 2em;
+       margin-top: -7em;
+     }
+
+     .item13 {
+       grid-column-start: 2;
+       grid-row-start: 9;
+       padding-top: 4em;
+       margin-bottom: 5em
+     }
+
+     .item14 {
+       grid-column-start: 3;
+       grid-row-start: 9;
+     }
+
+ }
+
+*
+Adobe Caslon Pro Regular
+
+font-family: adobe-caslon-pro, serif;
+font-weight: 400;
+font-style: normal;
+
+Adobe Caslon Pro Italic
+
+font-family: adobe-caslon-pro, serif;
+font-weight: 400;
+font-style: italic;
+
+Adobe Caslon Pro Bold
+
+font-family: adobe-caslon-pro, serif;
+font-weight: 700;
+font-style: normal;
+
+Adobe Caslon Pro Bold Italic
+
+font-family: adobe-caslon-pro, serif;
+font-weight: 700;
+font-style: italic;
+
+Adobe Caslon Pro Semibold
+
+font-family: adobe-caslon-pro, serif;
+font-weight: 600;
+font-style: normal;
+
+Adobe Caslon Pro Semibold Italic
+
+font-family: adobe-caslon-pro, serif;
+font-weight: 600;
+font-style: italic;
